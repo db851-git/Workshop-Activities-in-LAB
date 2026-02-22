@@ -1,0 +1,60 @@
+**Scenario:**
+A logistics company needs to deliver three high-priority packages: 
+a fragile glass item, a temperature-sensitive food item, 
+and a flammable chemical container. 
+Only one item can be transported at a time in a drone, 
+and certain items cannot be left together:
+
+The chemical container and food must not be left together unsupervised.
+
+The glass item and chemical container are safe together.
+
+The food and glass are safe together.
+
+Task:
+Design an algorithm that ensures all three items are delivered safely across the city from the warehouse to a storage facility.
+
+**Activity 1: Business Logistics Problem (Solution)**
+
+
+All items at warehouse
+
+Carry Food to Storage
+
+Return Empty
+
+Carry Chemical to Storage
+
+Bring Food back to Warehouse
+
+Carry Glass to Storage
+
+Return Empty
+
+Carry Food to Storage
+
+All items safely at Storage Facility
+
+**Activity 2 - Chocolate Sorting → Customer Segmentation Scenario:**
+You have a bag of customer survey results containing responses from two types of customers:
+ B2B and B2C. Each result is labeled only after opening it.
+
+Task:
+Design an algorithm to sort customer responses into two different piles: B2B and B2C.
+
+
+
+**Activity 2 - Chocolate Sorting → Customer Segmentation (Solution)**
+
+WHILE survey_responses IS NOT empty:
+
+    REMOVE response FROM survey_responses
+
+    IF response.customer_type == 'B2B':
+
+        ADD response TO b2b_list
+
+    ELSE:
+
+        ADD response TO b2c_list
+
